@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+        <style>
+            h1{
+                color: blue;
+            }
+            input[type=button], input[type=submit], input[type=reset] {
+                background-color: #25996e;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                border: none;
+                border-radius: 5px;
+                font-size: larger;
+                color: white;
+                padding: 16px 100px;
+                text-decoration: none;
+                margin: 2px 2px;
+                cursor: pointer;
+            }
+            img{
+                display: block;
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 10px;
+            }
+            h2{
+                color: whitesmoke;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            #gradient {
+                width: 100%;
+                height: 100%;
+                background: #466368;
+                background: linear-gradient(rgba(15,12,70)0%, rgba(23,23,93,1)38%, rgba(1,103,124,1)100%);
+                border-radius: 6px;
+            }
+            td, tr{
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-weight: bolder;
+                color:white ;
+                border-radius: 3px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="gradient">
+        <form action=summary.php method=get>
+        <a href="registration2.html"><img src="wordart.png" alt="wordart"><br></a>
+            <fieldset style="border-radius: 5px; border-color:rgb(23, 232, 204);"><LEGEND><h2>Personal Information</h2></LEGEND>
+                <table border="3" width="100%" bordercolor="white" style="border-radius: 10px;">
+
+                <tr><td> First Name</td> <td><input type="text" name="firstName" placeholder="Type your First Name" required></td>
+                    <td> Phone Number</td> <td><input type="text" name="mobileNum" placeholder="Type your Mobile Number" required></td></tr>
+                <tr><td> Last Name </td><td><input type="text" name="lastname" placeholder="Type your Last Name" required></td>
+                    <td> Email Address </td><td><input type="email" name="email" placeholder="Type your Email" required></td></tr>
+                <tr><td> Middle Name </td><td><input type="text" name="midname" placeholder="Type your Middle Name"></td>
+                    <td> Father's Name </td><td><input type="text" name="fatherName" placeholder="Type your Father's Name"></td></tr>
+                <tr><td> Gender</td> <td><input type=radio name=gender value=male>Male
+                        <input type=radio name=gender value=female>Female</td>
+                    <td> Father's Occupation</td> <td><input type="text" name="fatherOccupation" placeholder="Type your Fathers's Occupation"></td></tr>
+                <tr><td> Birthday </td><td><input type=date name="birthday" required></td>
+                    <td> Father's Birthday</td> <td><input type="date" name="fatherbday"></td></tr>
+                <tr><td> Place of Birth </td><td><input type="text" name="birthplace" placeholder="Type your birth place"></td>
+                    <td> Mother's Name </td><td><input type="text" name="motherName" placeholder="Type your Mother's Name"></td>
+                <tr><td> Region</td> <td>
+                    <select name="region">
+                        <option selected>Select Region
+                        <option value="Region I - Ilocos Region">Region I - Ilocos Region
+                        <option value="Region II - Cagayan Valley">Region II - Cagayan Valley
+                        <option value="Region III - Central Luzon">Region III - Central Luzon
+                        <option value="Region IV-A - CALABARZON">Region VI-A - CALABARZON
+                        <option value="MIMAROPA Region">MIMAROPA Region
+                        <option value="Region V - Bicol Region">Region V - Bicol Region
+                        <option value="Region VI - Western Visayas">Region VI - Western Visayas
+                        <option value="Region VII - Central Visayas">Region VII - Central Visayas
+                        <option value="Region VIII - Eastern Visayas">Region VIII - Eastern Visayas
+                        <option value="Region IX - Zamboanga Peninsula">Region IX - Zamboanga Peninsula
+                        <option value="Region X - Northern Mindanao">Region X - Northern Mindanao
+                        <option value="Region XI - Davao Region">Region XI - Davao Region
+                        <option value="Region XII - SOCCSKSARGEN">Region XII - SOCCSKSARGEN
+                        <option value="Region XIII - Caraga">Region XIII - Caraga
+                        <option value="NCR - National Capital Region">NCR - National Capital Region
+                        <option value="CAR - Cordillera Administrative Region">CAR - Cordillera Administrative Region
+                        <option value="BARMM - Bangsamoro Autonomous Region in Muslim Mindanao">BARMM - Bangsamoro Autonomous Region in Muslim Mindanao
+                        </select></td>
+                    <td> Mother's Occupation</td> <td><input type="text" name="motherOccupation" placeholder="Type your Mother's Occupation"></td></tr>
+                <tr><td> Year </td><td>
+                    <select name=year>
+                        <option selected>Select Year
+                        <option value="1st Year">1st Year
+                        <option value="2nd Year">2nd Year
+                        <option value="3rd Year">3rd Year
+                        <option value="4th Year">4th Year
+                    </select></td>
+                    <td> Mother's Birthday </td><td><input type="date" name="motherbday"></td></tr>
+                <tr><td>Section</td><td><input type="number" min="1" max="20" name="section" placeholder="Section"></td>
+                    <td> Nationality</td><td><input type="text" name="nationality" placeholder="Type your Nationality"></td></tr>
+                <tr><td> Course </td><td>
+                    <select name=college>
+                        <option selected>Select College
+		                <option value="College of Engineering & Technology">CET
+		                <option value="College of Health Sciences">CHS
+                        <option value="College of Criminal Justice">CCJ
+                        <option value="College of Education">CED
+                        <option value="College of Business Administration">CBA
+                        <option value="College of Law">CL
+                        <option value="College of Arts and Sciences">CAS
+	                </select>
+                        <select name=course>
+                            <option selected>Select Course
+                            <option value="Bachelor in Electronics Engineering">CET     Electronics Engineering
+                            <option value="Bachelor of Science in Computer Engineering">CET-Computer Engineering
+                            <option value="Bachelor in Information Technology with Specialization in Cybersecurity">CET-Cybersecurity
+                            <option value="Bachelor in Information Technology with Specialization in Data Science">CET-Data Science
+                            <option value="Bachelor of Science in Information Technology">CET-Information Technology
+                            <option value="Bachelor of Science in Nursing">CHS-Nursing
+                            <option value="Bachelor of Science in Physical Therapy">CHS-Physical Therapy
+                            <option value="Bachelor of Science in Criminology">CCJ-Criminology
+                            <option value="Bachelor in Physical Education Major in School of Physical Education">CED-Physical Education Major
+                            <option value="BSED Major in English">CED-Major in English
+                            <option value="BSED Major in General Science">CED-Major in General Science
+                            <option value="BSED Major in Mathematics">CED-Major in Mathematics
+                            <option value="BSED Major in Social Studies">CED-Major in Social Studies
+                            <option value="BSTVTE Major in Automotive">BSTVTE-Major in Automotive
+                            <option value="BSTVTE Major in Computer Programming Technology">BSTVTE-Major in Computer Programming Technology
+                            <option value="BSTVTE Major in Electronics Technology">BSTVTE-Major in Electronics Technology
+                            <option value="BS in Accountancy">CBA-Accountancy
+                            <option value="BS in Accounting Information System">CBA-Accounting Information System
+                            <option value="BS in Business Administration">CBA-Business Administration
+                            <option value="BS of Science in Entrepreneurship">CBA-Entrepreneurship
+                            <option value="Juris Doctor">CL-Juris Doctor
+                            <option value="Bachelor of Arts in Communication">CAS-Communication
+                            <option value="Bachelor of Arts in Political Science">CAS-Political Science
+                            <option value="Bachelor in Public Administration">CAS-Public Administration
+                            <option value="Bachelor of Science in Psychology">CAS-Psychology
+                            <option value="Bachelor of Science in Social Work">CAS-Social Work
+                        </select></td>
+                        <td> Religion </td><td><input type="text" name="religion" placeholder="Type your Religion"></td></tr>
+                </table>
+            </fieldset><br>
+
+            <fieldset style="border-radius: 5px; border-color:rgb(22, 205, 180);"><legend><h2>Tell Us About Yourself !</h2></legend>
+                <table border="3" width="100%" bordercolor="white" style="border-radius: 10px;">
+                    <tr><td> What is your Favorite Color: </td> <td><input type="text" name="color" size="100%" placeholder="Type your Answer Here"></td></tr>
+                    <tr><td> What is your Favorite Movie: </td><td><input type="text" name="movie" size="100%" placeholder="Type your Answer Here"></td></tr>
+                    <tr><td> Who is your Favorite Singer: </td><td><input type="text" name="singer" size="100%" placeholder="Type your Answer Here"></td></tr>
+                    <tr><td> What is your Favorite Song: </td><td><input type="text" name="song" size="100%" placeholder="Type your Answer Here"></td></tr>
+                    <tr><td> What is your Favorite Food: </td><td><input type="text" name="food" size="100%" placeholder="Type your Answer Here"></td></tr>
+                    <tr><td> Where would be your favorite place to live: </td><td><input type="text" name="place" size="100%" placeholder="Type your Answer Here"></td></tr>
+                    <tr><td> What is your favorite thing on your bucket list: </td><td><input type="text" name="bucket" size="100%" placeholder="Type your Answer Here"></td></tr>
+                    <tr><td> What is your favorite thing thing about studying: </td><td><input type="text" name="study" size="100%" placeholder="Type your Answer Here"></td></tr>
+                    <tr><td>What is your Favorite Social Media Website</td><td>
+                        <input type="radio" id="facebook" name="socialMedia" value="Facebook">
+                            <label for="facebook">Facebook</label>
+                        <input type="radio" id="instagram" name="socialMedia" value="instagram">
+                            <label for="instagram">Instagram</label>
+                        <input type="radio" id="twitter" name="socialMedia" value="Twitter">
+                            <label for="twitter">Twitter</label>
+                        <input type="radio" id="tumblr" name="socialMedia" value="Tumblr">
+                            <label for="tumblr">Tumblr</label>
+                        <input type="radio" id="pinterest" name="socialMedia" value="Pinterest">
+                            <label for="pinterest">Pinterest</label></td></tr>
+                    <tr><td> Where do you see yourself in 5 years: </td><td><input type="text" name="years" size="100%" placeholder="Type your Answer Here"></td></tr>          
+                </table>
+            </fieldset><br>
+
+            <fieldset style="border-radius: 5px; border-color:rgb(19, 157, 141);"><legend><h2>Health Declaration</h2></legend>
+                <table border="3" align="center" width="50%" bordercolor="white" style="border-radius: 10px;">
+                <tr><td> Temperature (In Degrees) </td><td><input type ="number" name="temp" min="25" max="50"></td></tr>
+                <tr><td colspan="2">Symptoms</td></tr>
+                <tr><td>Sore Throat</td><td>
+                    <input type="radio" name="soreThroat" value="Yes">Yes
+                    <input type="radio" name="soreThroat" value="No">No</td></tr>
+                <tr><td>Shortness of Breath</td><td>
+                    <input type="radio" name="shortness" value="Yes">Yes
+                    <input type="radio" name="shortness" value="No">No</td></tr>
+                <tr><td>Body Pains</td><td>
+                    <input type="radio" name="bodyPain" value="Yes">Yes
+                    <input type="radio" name="bodyPain" value="No">No</td></tr>
+                <tr><td>Headache</td><td>
+                    <input type="radio" name="headache" value="Yes">Yes
+                    <input type="radio" name="headache" value="No">No</td></tr>
+                <tr><td>Fever for the past few Days</td><td>
+                    <input type="radio" name="fever" value="Yes">Yes
+                    <input type="radio" name="fever" value="No">No</td></tr>
+                <tr><td>Loss of taste or smell</td><td>
+                    <input type="radio" name="lossSmell" value="Yes">Yes
+                    <input type="radio" name="lossSmell" value="No">No</td></tr>
+                <tr><td>Cough and/or Cold</td><td>
+                    <input type="radio" name="cough" value="Yes">Yes
+                    <input type="radio" name="cough" value="No">No</td></tr>
+                <tr><td>Diarrhea</td><td>
+                    <input type="radio" name="diarrhea" value="Yes">Yes
+                    <input type="radio" name="diarrhea" value="No">No</td></tr>
+                </table>
+            </fieldset><br>
+                <center><input type="submit" value="SIGN UP" name=submit>
+	                    <input type="reset" value="CLEAR"></center>
+                <br>
+        </div>
+    </body>
+</html>
